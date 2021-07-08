@@ -12,17 +12,7 @@
 
 + Miktex Installation
 
-```sh
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
-echo "deb http://miktex.org/download/ubuntu xenial universe" | sudo tee /etc/apt/sources.list.d/miktex.list
-sudo apt update
-```
-
-```sh
-sudo apt install miktex
-```
-
-Schritte auf dieser Website befolgen um Installation abzuschließen: https://miktex.org/howto/install-miktex-unx
+Schritte auf dieser Website befolgen: https://miktex.org/download/
 
 + Texmaker Installation:
 
@@ -69,7 +59,7 @@ GUI Methode: JabRef installieren und damit _Literaturverzeichnis.bib_ öffnen. G
 ### Akronyme
 
 Abkürzungsverzeichnis in der _appendix.tex_.
-In der Zone acronym (\begin{acronym}...\begin{acronym}) werden die Abkürzungen definiert.
+In der Zone acronym (\begin{acronym}...\end{acronym}) werden die Abkürzungen definiert.
 
 ```tex
 \begin{acronym}
@@ -100,7 +90,7 @@ Wenn style oder language angegeben ist, muss das andere nicht angegeben werden. 
 \end{lstlisting}
 ```
 
-Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](https://www.google.com) oder liest in der [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf) nach. In lstlisting sind folgende Sprachen bereits vordefiniert:
+Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](https://www.google.com) oder liest in der [Dokumentation](https://en.m.wikibooks.org/wiki/LaTeX/Source_Code_Listings) nach. In lstlisting sind folgende Sprachen bereits vordefiniert:
 
 + C
 + C++
@@ -114,9 +104,9 @@ Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](ht
 + SQL
 + TeX
 + XML
-+ und viele mehr (siehe [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf))
++ und viele mehr (siehe [Dokumentation](https://en.m.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages))
 
-Alle weiteren Sprachen müssen mit `\definelanguage{}` definiert werden. Dazu entweder die [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf) lesen, oder [Onkel Google](https://google.com) fragen.
+Alle weiteren Sprachen müssen mit `\definelanguage{}` definiert werden. Dazu entweder die [Dokumentation](https://ctan.org/tex-archive/macros/latex/contrib/listings/) lesen, oder [Onkel Google](https://google.com) fragen.
 
 ### Aufzählungen
 
